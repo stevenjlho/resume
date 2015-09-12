@@ -4,3 +4,6 @@
 * 所在城市：广州
 * 应聘职位：前端工程师、PHP程序员
 * 工作年龄：4年
+* 邮箱：   [stevenjlho@gmail.com](mailto:stevenjlho@gmail.com)
+* 博客：   <https://stevenjlho.github.io>
+* Github： <https://github.com/stevenjlho>
