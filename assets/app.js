@@ -11939,13 +11939,13 @@
 /* 15 */
 /***/ function(module, exports) {
 
-	module.exports = "<h3 id=\"-\">个人信息</h3>\n<hr>\n<ul>\n<li>毕业学校：广东工贸职业技术学院(2008-2011)</li>\n<li>所在城市：广州</li>\n<li>应聘职位：前端工程师、PHP程序员</li>\n<li>工作年龄：4年</li>\n</ul>\n";
+	module.exports = "<h3 id=\"-\">个人信息</h3>\n<hr>\n<ul>\n<li>毕业学校：广东工贸职业技术学院(2008-2011)</li>\n<li>所在城市：广州</li>\n<li>应聘职位：前端工程师、PHP程序员</li>\n<li>工作年龄：4年</li>\n<li>邮箱：   <a href=\"mailto:stevenjlho@gmail.com\">stevenjlho@gmail.com</a></li>\n<li>博客：   <a href=\"https://stevenjlho.github.io\">https://stevenjlho.github.io</a></li>\n<li>Github： <a href=\"https://github.com/stevenjlho\">https://github.com/stevenjlho</a></li>\n</ul>\n";
 
 /***/ },
 /* 16 */
 /***/ function(module, exports) {
 
-	module.exports = "<h3 id=\"-\">个人信息</h3>\n<hr>\n<ul>\n<li>熟练使用<code>Html</code>、<code>CSS</code>、<code>JavaScript</code>构建网站前端。</li>\n<li>熟练使用<code>jQuery</code>，可以编写<code>jQuery</code>插件。</li>\n<li>使用<code>Bower</code>、<code>NPM</code>、<code>Gulp</code>，<code>Webpack</code>等工具构建项目。</li>\n<li>熟练<code>Git</code>，平时习惯在Linux的命令行操作Git。</li>\n<li>熟练Bootstrap框架，可以使用Sass来扩展Bootstrap。</li>\n<li>了解PHP，可以使用Yii框架构建网站。</li>\n<li>平时日常的操作都在<code>Ubuntu</code>，了解常见的Linux命令，可以使用<code>Bash</code>编写简单的脚本。</li>\n</ul>\n";
+	module.exports = "<h3 id=\"-\">个人技能</h3>\n<hr>\n<ul>\n<li>熟练使用<code>Html</code>、<code>CSS</code>、<code>JavaScript</code>构建网站前端。</li>\n<li>熟练使用<code>jQuery</code>，可以编写<code>jQuery</code>插件。</li>\n<li>使用<code>Bower</code>、<code>NPM</code>、<code>Gulp</code>，<code>Webpack</code>等工具构建项目。</li>\n<li>熟练<code>Git</code>，平时习惯在Linux的命令行操作Git。</li>\n<li>熟练Bootstrap框架，可以使用Sass来扩展Bootstrap。</li>\n<li>了解PHP，可以使用Yii框架构建网站。</li>\n<li>平时日常的操作都在<code>Ubuntu</code>，了解常见的Linux命令，可以使用<code>Bash</code>编写简单的脚本。</li>\n</ul>\n";
 
 /***/ },
 /* 17 */
