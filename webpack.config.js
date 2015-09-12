@@ -1,4 +1,3 @@
-var path = require("path");
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -33,7 +32,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      title: 'Resume',
+      title: 'Resume'
     }),
     new ExtractTextPlugin("./assets/app.css"),
     new BowerWebpackPlugin({
@@ -46,6 +45,5 @@ module.exports = {
         jQuery: "jquery"
     })
   ],
-  devtool: 'source-map',
   watch: true
-}
+};
