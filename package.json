@@ -17,6 +17,7 @@
 		"node":  ">=0.12.0"
 	},
   "devDependencies": {
+    "extend": "3.0.0",
     "gulp": "^3.9.0",
     "webpack-stream": "^2.1.0",
     "gulp-bower": "^0.0.10",
