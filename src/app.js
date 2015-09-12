@@ -1,7 +1,7 @@
-require('./app.scss');
-require('github-markdown-css');
 var fullpage = require("fullpage");
 var body = require('./body.js');
+require('github-markdown-css');
+require('./app.scss');
 
 
 $(document).ready(function() {

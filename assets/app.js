@@ -44,17 +44,17 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(3);
-	__webpack_require__(5);
-	var fullpage = __webpack_require__(7);
-	var body = __webpack_require__(13);
+	/* WEBPACK VAR INJECTION */(function($) {var fullpage = __webpack_require__(3);
+	var body = __webpack_require__(10);
+	__webpack_require__(16);
+	__webpack_require__(18);
 	
 	
 	$(document).ready(function() {
 	  $('body').append(body).append('<a href="https://github.com/stevenjlho/resume"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>');
 	  $('#fullpage').fullpage({
 	    navigation: true,
-			navigationPosition: 'right',
+	    navigationPosition: 'right',
 	    scrollBar: true,
 	    responsiveWidth: '960px'
 	  });
@@ -9286,35 +9286,16 @@
 
 /***/ },
 /* 3 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 4 */,
-/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(6);
-
-/***/ },
-/* 6 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
+	module.exports = __webpack_require__(4);
+	__webpack_require__(5);
+	__webpack_require__(7);
 	module.exports = __webpack_require__(8);
-	__webpack_require__(9);
-	__webpack_require__(10);
-	module.exports = __webpack_require__(11);
-	module.exports = __webpack_require__(12);
+	module.exports = __webpack_require__(9);
 
 /***/ },
-/* 8 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11855,19 +11836,20 @@
 
 
 /***/ },
-/* 9 */
+/* 5 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 10 */
+/* 6 */,
+/* 7 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 11 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(jQuery) {/*! jQuery UI - v1.9.2 - 2014-03-21
@@ -11880,7 +11862,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 12 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(jQuery) {/*! Copyright (c) 2011 Piotr Rochala (http://rocha.la)
@@ -11902,10 +11884,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 13 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function($) {var content = __webpack_require__(14);
+	/* WEBPACK VAR INJECTION */(function($) {var content = __webpack_require__(11);
 	var bodyHtml = '';
 	
 	if(!$.isEmptyObject(content)) {
@@ -11922,13 +11904,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 14 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var summary = __webpack_require__(15);
-	var skills = __webpack_require__(16);
-	var ipiao = __webpack_require__(17);
-	var v4s = __webpack_require__(18);
+	var summary = __webpack_require__(12);
+	var skills = __webpack_require__(13);
+	var ipiao = __webpack_require__(14);
+	var v4s = __webpack_require__(15);
 	
 	var contentArray = [summary, skills, ipiao, v4s];
 	
@@ -11936,28 +11918,46 @@
 
 
 /***/ },
-/* 15 */
+/* 12 */
 /***/ function(module, exports) {
 
 	module.exports = "<h3 id=\"-\">个人信息</h3>\n<hr>\n<ul>\n<li>毕业学校：广东工贸职业技术学院(2008-2011)</li>\n<li>所在城市：广州</li>\n<li>应聘职位：前端工程师、PHP程序员</li>\n<li>工作年龄：4年</li>\n<li>邮箱：   <a href=\"mailto:stevenjlho@gmail.com\">stevenjlho@gmail.com</a></li>\n<li>博客：   <a href=\"https://stevenjlho.github.io\">https://stevenjlho.github.io</a></li>\n<li>Github： <a href=\"https://github.com/stevenjlho\">https://github.com/stevenjlho</a></li>\n</ul>\n";
 
 /***/ },
-/* 16 */
+/* 13 */
 /***/ function(module, exports) {
 
 	module.exports = "<h3 id=\"-\">个人技能</h3>\n<hr>\n<ul>\n<li>熟练使用<code>Html</code>、<code>CSS</code>、<code>JavaScript</code>构建网站前端。</li>\n<li>熟练使用<code>jQuery</code>，可以编写<code>jQuery</code>插件。</li>\n<li>使用<code>Bower</code>、<code>NPM</code>、<code>Gulp</code>，<code>Webpack</code>等工具构建项目。</li>\n<li>熟练<code>Git</code>，平时习惯在Linux的命令行操作Git。</li>\n<li>熟练Bootstrap框架，可以使用Sass来扩展Bootstrap。</li>\n<li>了解PHP，可以使用Yii框架构建网站。</li>\n<li>平时日常的操作都在<code>Ubuntu</code>，了解常见的Linux命令，可以使用<code>Bash</code>编写简单的脚本。</li>\n</ul>\n";
 
 /***/ },
-/* 17 */
+/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = "<h3 id=\"ipiao\">ipiao</h3>\n<hr>\n<ul>\n<li>公司名称：广州票量商务服务有限公司</li>\n<li>工作职位：前端工程师</li>\n<li>工作时间：2012.08-2013.08</li>\n<li>官方网站：<a href=\"http://ipiao.com/\" title=\"ipiao\">ipiao</a></li>\n<li>项目地址：<a href=\"http://ipiao.com/\" title=\"ipiao\">ipiao</a></li>\n<li>项目简介：可以购买电影票、演唱会门票，可以浏览相关信息，也可以在评论互动，集购票、社交与一体。</li>\n<li>工作描述：与产品人员沟通，与其他前端开发人员一起负责前端的开发，二次封装jQuery插件，制作网站活动专题，维护网站的样式。</li>\n</ul>\n";
 
 /***/ },
-/* 18 */
+/* 15 */
 /***/ function(module, exports) {
 
 	module.exports = "<h4 id=\"v4s\">V4S</h4>\n<hr>\n<ul>\n<li>公司名称：广州辂轺科技有限公司</li>\n<li>项目简介</li>\n<li>工作职位：前端工程师</li>\n<li>工作时间：2013.08-至今</li>\n<li>官方网站：<a href=\"http://amwares.com/\" title=\"Amwares\">Amwares</a></li>\n<li>项目地址：企业ERP系统，暂不对外开放</li>\n<li>项目介绍：专注汽车后市场的电子商务系统。V4S是一个基于<code>云计算</code>，专注于汽车后市场的<code>e-Business</code>系统。使用V4S，处于汽车后市场供应链各个环节的公司不但可以高效和方便地管理内部和外部事务，包括人员、财务、库存、产品、采购、销售、客户及供应商，还可通过平台的数据对库存及销售等作出正确的决策，任何时间和任何地点。</li>\n<li>工作描述：<ol>\n<li>业务上需要了解汽车零件进销存流程，并且理解业务的基础上设计适合Web的交互操作。</li>\n<li>使用<code>Bootstrap</code>、<code>jQuery</code>进行前端开发，<code>NPM</code>、<code>Bower</code>管理前端插件，使用Gulp来构建网站的静态资源，初始化项目环境等。</li>\n<li><code>CSS</code>与处理器选择<code>Sass</code>，主要就是扩展<code>Bootstrap</code>的样式。</li>\n<li>后端使用<code>Yii</code>开发，会编写接口供前端调用，并且会组织Controller的数据渲染到前端。</li>\n</ol>\n</li>\n</ul>\n";
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(17);
+
+/***/ },
+/* 17 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
