@@ -46,8 +46,9 @@
 
 	/* WEBPACK VAR INJECTION */(function($) {var fullpage = __webpack_require__(3);
 	var body = __webpack_require__(10);
-	__webpack_require__(16);
-	__webpack_require__(18);
+	__webpack_require__(17);
+	__webpack_require__(19);
+	__webpack_require__(21);
 	
 	
 	$(document).ready(function() {
@@ -56,7 +57,16 @@
 	    navigation: true,
 	    navigationPosition: 'right',
 	    scrollBar: true,
-	    responsiveWidth: '960px'
+	    responsiveWidth: '960px',
+	    afterLoad: function(anchorLink, index) {
+	      var animate = __webpack_require__(16)();
+	      
+	      var element = $('.content').eq(index - 1);
+	      $('.content').not(element).removeClass('shown');
+	      element.addClass('shown').addClass(animate).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	        $(this).removeClass(animate);
+	      });
+	    }
 	  });
 	});
 	
@@ -11943,18 +11953,45 @@
 
 /***/ },
 /* 16 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	__webpack_require__(17);
+	
+	var effectArray = ['bounceIn', 'fadeIn', 'lightSpeedIn', 'rotateIn', 'zoomIn', 'rollIn'];
+	var length = effectArray.length;
+	
+	module.exports = function() {
+	    // 生成随机Key值
+	    var effectKey = Math.floor(Math.random() * length);
+	    return effectArray[effectKey] + ' animated';
+	};
+
 
 /***/ },
 /* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(18);
+
+/***/ },
+/* 18 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 18 */
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(20);
+
+/***/ },
+/* 20 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 21 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

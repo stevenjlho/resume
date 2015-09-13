@@ -1,6 +1,11 @@
 
 .content {
   margin: 0 auto;
+  display: none;
+}
+
+.shown {
+  display: block;
 }
 
 @media (min-width: 960px) {

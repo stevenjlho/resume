@@ -3,10 +3,10 @@ var webpackStream = require('webpack-stream');
 var bower = require('gulp-bower');
 var extend = require('extend');
 
-gulp.task('bower', function() {
-  return bower({ directory: './assets/plugins'})
-});
 
+gulp.task('bower', function() {
+  return bower({ directory: 'assets/plugins'})
+});
 
 gulp.task('default', function() {
   return gulp.src('./src/app.js')
