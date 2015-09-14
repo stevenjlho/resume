@@ -1,33 +1,5 @@
 .DS_Store
 .AppleDouble
-.LSOverride
-
-# Icon must ends with two
-.
-Icon
-
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-
-# Logs
-logs
-*.log
-
-# Runtime data
-pids
-*.pid
-*.seed
 
 # Dependency directory
 # Deployed apps should consider commenting this line out:
@@ -36,3 +8,7 @@ node_modules
 
 # Jetbrain IDE File
 .idea
+
+# Ignore Generate File
+assets
+index.html
