@@ -1,7 +1,7 @@
-var fullpage = require("fullpage.js");
+require("fullpage.js");
+require("fullpage.js/jquery.fullPage.scss");
 var body = require('./body.js');
 require('github-markdown-css');
-require('animate.css');
 require('./app.scss');
 
 
@@ -11,17 +11,6 @@ $(document).ready(function() {
     navigation: true,
     navigationPosition: 'right',
     scrollBar: true,
-    responsiveWidth: '960px',
-    afterLoad: function(anchorLink, index) {
-      var animate = require('./animate.js')();
-      
-      var element = $('.content').eq(index - 1);
-      $('.content').not(element).removeClass('shown');
-      element.addClass('shown').addClass(animate).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        $(this).removeClass(animate);
-      });
-    }
+    responsiveWidth: '960px'
   });
-
-  console.log(2342432);
 });
