@@ -1,4 +1,4 @@
-var fullpage = require("fullpage");
+var fullpage = require("fullpage.js");
 var body = require('./body.js');
 require('github-markdown-css');
 require('animate.css');
@@ -22,4 +22,6 @@ $(document).ready(function() {
       });
     }
   });
+
+  console.log(2342432);
 });

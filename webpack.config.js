@@ -3,11 +3,13 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+
 module.exports = {
-    entry: "./src/app.js",
+    entry: __dirname + "/src/app.js",
     output: {
         publicPath: './assets/',
-        filename: './assets/app.js'
+        path: __dirname + '/assets',
+        filename: 'app.js'
     },
     module: {
         loaders: [
@@ -34,9 +36,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             hash: true,
-            title: 'Resume'
+            title: 'Resume',
+            filename: '../index.html'
         }),
-        new ExtractTextPlugin('./assets/app.css'),
+        new ExtractTextPlugin('app.css'),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
