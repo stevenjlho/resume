@@ -2,11 +2,14 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var BowerWebpackPlugin = require("bower-webpack-plugin");
+
 
 module.exports = {
+    entry: __dirname + "/src/app.js",
     output: {
-        filename: './assets/app.js'
+        publicPath: './assets/',
+        path: __dirname + '/assets',
+        filename: 'app.js'
     },
     module: {
         loaders: [
@@ -33,13 +36,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             hash: true,
-            title: 'Resume'
+            title: 'Resume',
+            filename: '../index.html'
         }),
-        new ExtractTextPlugin('./assets/app.css'),
-        new BowerWebpackPlugin({
-            modulesDirectories: ['./assets/plugins'],
-            searchResolveModulesDirectories: true
-        }),
+        new ExtractTextPlugin('app.css'),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
