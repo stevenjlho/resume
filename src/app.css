@@ -1,5 +1,8 @@
+.row {
+  lost-utility: clearfix;
 
-.content {
-  margin: 40px auto 0;
+  & .part {
+    lost-column: 1/2;
+  }
 }
 
