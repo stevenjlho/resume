@@ -1,0 +1,21 @@
+//- app.pug
+doctype html
+html
+    head
+        title #{htmlWebpackPlugin.options.config.title}
+    body
+        div(class='content markdown-body')
+            section(class='row')
+                div(class='part')
+                    h3 #{htmlWebpackPlugin.options.config.name}
+                div(class='part')
+                    | #{htmlWebpackPlugin.options.config.sex}
+                    | #{htmlWebpackPlugin.options.config.age}
+                    | #{htmlWebpackPlugin.options.config.workingage}
+                    | #{htmlWebpackPlugin.options.config.location}
+                div(class='part')
+                    | 邮箱: #{htmlWebpackPlugin.options.config.email}
+                div(class='part')
+                    | 电话: #{htmlWebpackPlugin.options.config.mobile}
+            section(class='row')
+                include:markdown-it content.md

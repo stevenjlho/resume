@@ -1,0 +1,25 @@
+body {
+  background-color: #fafafa;
+}
+
+.content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 7.25%;
+  padding-right: 7.25%;
+  border: 1px solid #ddd;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  lost-center: 980px;
+}
+
+.row {
+  lost-utility: clearfix;
+
+  & .part {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
