@@ -20,6 +20,7 @@
     "github-markdown-css": "^2.4.1",
     "html-webpack-plugin": "^2.24.1",
     "jstransformer-markdown-it": "^2.0.0",
+    "lost": "^7.1.1",
     "postcss-cssnext": "^2.9.0",
     "postcss-loader": "1.2.0",
     "pug": "^2.0.0-beta6",
@@ -27,10 +28,6 @@
     "style-loader": "^0.13.1",
     "stylelint": "^7.6.0",
     "stylelint-config-standard": "^15.0.0",
-    "webpack": "^2.1.0-beta.27",
-    "webpack-dev-server": "^2.1.0-beta.12"
-  },
-  "dependencies": {
-    "lost": "^7.1.1"
+    "webpack": "^2.1.0-beta.27"
   }
 }
