@@ -6,10 +6,10 @@ var config = require('./config.json');
 
 
 module.exports = {
-  entry: __dirname + "/src/app.js",
+  entry: path.resolve(__dirname, 'src', 'app.js'),
   output: {
     publicPath: './assets/',
-    path: __dirname + '/assets',
+    path: path.resolve(__dirname, 'assets'),
     filename: 'app.js'
   },
   module: {
@@ -55,8 +55,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      filename: '../index.html',
-      template: 'src/app.pug',
+      filename: path.resolve(__dirname, 'index.html'),
+      template: path.resolve(__dirname, 'src', 'app.pug'),
       config: config
     }),
     new ExtractTextPlugin('app.css')
