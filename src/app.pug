@@ -2,6 +2,14 @@
 doctype html
 html
     head
-        title #{htmlWebpackPlugin.options.config.title}
+        title #{htmlWebpackPlugin.options.title}
     body
-        include:markdown-it content.md
+        div(class='content markdown-body')
+            section(class='row')
+                div(class='part') 何建乐
+                div(class='part') 男 27岁 大专 5年工作经验 广州
+                div(class='part') 邮箱: stevenjlho@gmail.com
+                div(class='part') 电话: 18664628644
+
+            section(class='row')
+                include:markdown-it content.md

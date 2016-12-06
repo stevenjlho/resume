@@ -10,7 +10,8 @@
   "license": "MIT",
   "repository": "https://github.com/stevenjlho/resume",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "develop": "webpack --watch"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
